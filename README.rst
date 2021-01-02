@@ -65,8 +65,8 @@ Install from source
 
 .. code:: bash
 
-   git clone https://github.com/terrencetec/mypythonlibrary.git
-   cd mypythonlibrary
+   git clone https://github.com/terrencetec/stockdaq.git
+   cd stockdaq
    pip install .
 
 How to Contribute
@@ -130,28 +130,28 @@ Open index.html with a browser (if this was set as the first page).
 
 .. |logo| image:: docs/source/_static/logo.svg
     :alt: Logo
-    :target: https://github.com/terrencetec/mypythonlibrary
+    :target: https://github.com/terrencetec/stockdaq
 
-.. |website| image:: https://img.shields.io/badge/website-mypythonlibrary-blue.svg
+.. |website| image:: https://img.shields.io/badge/website-stockdaq-blue.svg
     :alt: Website
-    :target: https://github.com/terrencetec/mypythonlibrary
+    :target: https://github.com/terrencetec/stockdaq
 
-.. |release| image:: https://img.shields.io/github/v/release/terrencetec/mypythonlibrary?include_prereleases
+.. |release| image:: https://img.shields.io/github/v/release/terrencetec/stockdaq?include_prereleases
    :alt: Release
-   :target: https://github.com/terrencetec/mypythonlibrary/releases
+   :target: https://github.com/terrencetec/stockdaq/releases
 
-.. |rtd| image:: https://readthedocs.org/projects/mypythonlibrary/badge/?version=latest
+.. |rtd| image:: https://readthedocs.org/projects/stockdaq/badge/?version=latest
    :alt: Read the Docs
-   :target: https://mypythonlibrary.readthedocs.io/
+   :target: https://stockdaq.readthedocs.io/
 
-.. |license| image:: https://img.shields.io/github/license/terrencetec/mypythonlibrary
+.. |license| image:: https://img.shields.io/github/license/terrencetec/stockdaq
     :alt: License
-    :target: https://github.com/terrencetec/mypythonlibrary/blob/master/LICENSE
+    :target: https://github.com/terrencetec/stockdaq/blob/master/LICENSE
 
-.. |travis-ci| image:: https://travis-ci.com/terrencetec/mypythonlibrary.svg?branch=master
+.. |travis-ci| image:: https://travis-ci.com/terrencetec/stockdaq.svg?branch=master
     :alt: travis-ci
-    :target: https://travis-ci.com/terrencetec/mypythonlibrary
+    :target: https://travis-ci.com/terrencetec/stockdaq
 
-.. |codecov| image:: https://codecov.io/gh/terrencetec/mypythonlibrary/branch/master/graph/badge.svg?token=NMEBAYFE2N
+.. |codecov| image:: https://codecov.io/gh/terrencetec/stockdaq/branch/master/graph/badge.svg?token=NMEBAYFE2N
     :alt: codecov
-    :target: https://codecov.io/gh/terrencetec/mypythonlibrary
+    :target: https://codecov.io/gh/terrencetec/stockdaq
