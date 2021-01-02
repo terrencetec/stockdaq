@@ -1,7 +1,7 @@
 import logging
 
 
-logger = logging.getLogger("mypythonlibrary")
+logger = logging.getLogger("stockdaq")
 
 logger.setLevel(logging.DEBUG)
 

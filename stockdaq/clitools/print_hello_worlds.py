@@ -9,7 +9,7 @@ def parser():
 
 def main(args=None):
 
-    from mypythonlibrary.helloworld import helloworlds
+    from stockdaq.helloworld import helloworlds
 
     options = parser().parse_args(args)
 
