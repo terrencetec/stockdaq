@@ -12,6 +12,9 @@ https://github.com/pypa/sampleproject
 from setuptools import setup, find_packages
 import pathlib
 
+from stockdaq.__version__ import VERSION
+
+
 here = pathlib.Path(__file__).parent.resolve()
 
 # Get the long description from the README file
@@ -20,15 +23,12 @@ long_description = (here / 'README.rst').read_text(encoding='utf-8')
 # Arguments marked as "Required" below must be included for upload to PyPI.
 # Fields marked as "Optional" may be commented out.
 
-MAJOR = 0
-MINOR = 0
-MICRO = 0
-VERSION = '%d.%d.%d'%(MAJOR,MINOR,MICRO)
+
 
 setup(
-    name='mypythonlibrary',  # Required
+    name='stockdaq',  # Required
     version=VERSION,  # Required
-    description='A template for creating new python library',  # Optional
+    description='Stock market data acquisition system',  # Optional
     long_description=long_description,  # Optional
     long_description_content_type='text/x-rst',  # Optional (see note above)
     url='https://github.com/terrencetec/mypythonlibrary',  # Optional
@@ -57,7 +57,7 @@ setup(
     # },
     entry_points={
         'console_scripts': [
-            'print-hello-worlds=mypythonlibrary.clitools.print_hello_worlds:main'
+            'print-hello-worlds=stockdaq.clitools.print_hello_worlds:main'
         ],
     }
     # List additional URLs that are relevant to your project as a dict.

@@ -1,7 +1,7 @@
 """
 """
-import mypythonlibrary.helloworld
-import mypythonlibrary.clitools
+import stockdaq.helloworld
+import stockdaq.clitools
 
 
 def test_helloworld():

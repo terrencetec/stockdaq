@@ -1,23 +1,23 @@
 |logo|
 
-*One-line description here!*
+*Stock market data acquisition system*
 
 |website| |release| |rtd| |license| |travis-ci| |codecov|
 
-My Python Library
-=================
+StockDAQ
+========
 
-This is a template for creating new python library. Here are some descriptions!
+This is a python library for acquisition of stock market data.
 
 **features**
 
-* print Hello World!
-* print many Hello Worlds!
-* command line tools for printing a lot of Hello Worlds!
+* Store stock data into files
+* Read stock data
+* Command line usage and logging.
 
-**Documentation**: https://mypythonlibrary.readthedocs.io
+**Documentation**: https://stockdaq.readthedocs.io
 
-**Repository**: https://github.com/terrencetec/mypythonlibrary
+**Repository**: https://github.com/terrencetec/stockdaq
 
 .. contents::
    :depth: 2
