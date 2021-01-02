@@ -3,56 +3,49 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-My Python Library
-=================
-
-*One-line description here!*
+*Stock market data acquisition system*
 
 |website| |release| |rtd| |license| |travis-ci| |codecov|
 
-My Python Library
-=================
+StockDAQ
+========
 
-This is a template for creating new python library. Here are some descriptions!
+This is a python library for acquisition of stock market data.
 
 **features**
 
-* print Hello World!
-* print many Hello Worlds!
-* command line tools for printing a lot of Hello Worlds!
+* Store stock data into files
+* Read stock data
+* Command line usage and logging.
 
-**Documentation**: https://mypythonlibrary.readthedocs.io
+**Documentation**: https://stockdaq.readthedocs.io
 
-**Repository**: https://github.com/terrencetec/mypythonlibrary
+**Repository**: https://github.com/terrencetec/stockdaq
 
 
 .. |logo| image:: docs/source/_static/logo.svg
-    :alt: Logo
-    :target: https://github.com/terrencetec/mypythonlibrary
+   :alt: Logo
+   :target: https://github.com/terrencetec/stockdaq
 
-.. |website| image:: https://img.shields.io/badge/website-mypythonlibrary-blue.svg
-    :alt: Website
-    :target: https://github.com/terrencetec/mypythonlibrary
+.. |website| image:: https://img.shields.io/badge/website-stockdaq-blue.svg
+   :alt: Website
+   :target: https://github.com/terrencetec/stockdaq
 
-.. |release| image:: https://img.shields.io/github/v/release/terrencetec/mypythonlibrary?include_prereleases
-   :alt: Release
-   :target: https://github.com/terrencetec/mypythonlibrary/releases
+.. |release| image:: https://img.shields.io/github/v/release/terrencetec/stockdaq?include_prereleases
+  :alt: Release
+  :target: https://github.com/terrencetec/stockdaq/releases
 
-.. |rtd| image:: https://readthedocs.org/projects/mypythonlibrary/badge/?version=latest
-   :alt: Read the Docs
-   :target: https://mypythonlibrary.readthedocs.io/
+.. |rtd| image:: https://readthedocs.org/projects/stockdaq/badge/?version=latest
+  :alt: Read the Docs
+  :target: https://stockdaq.readthedocs.io/
 
-.. |license| image:: https://img.shields.io/github/license/terrencetec/mypythonlibrary
-    :alt: License
-    :target: https://github.com/terrencetec/mypythonlibrary/blob/master/LICENSE
+.. |license| image:: https://img.shields.io/github/license/terrencetec/stockdaq
+   :alt: License
+   :target: https://github.com/terrencetec/stockdaq/blob/master/LICENSE
 
-.. |travis-ci| image:: https://travis-ci.com/terrencetec/mypythonlibrary.svg?branch=master
-    :alt: travis-ci
-    :target: https://travis-ci.com/terrencetec/mypythonlibrary
-
-.. |codecov| image:: https://codecov.io/gh/terrencetec/mypythonlibrary/branch/master/graph/badge.svg?token=NMEBAYFE2N
-    :alt: codecov
-    :target: https://codecov.io/gh/terrencetec/mypythonlibrary
+.. |travis-ci| image:: https://travis-ci.com/terrencetec/stockdaq.svg?branch=master
+   :alt: travis-ci
+   :target: https://travis-ci.com/terrencetec/stockdaq
 
 
 .. toctree::
