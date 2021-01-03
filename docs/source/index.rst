@@ -52,7 +52,7 @@ This is a python library for acquisition of stock market data.
     :target: https://codecov.io/gh/terrencetec/stockdaq
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
    self
