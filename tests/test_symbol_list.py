@@ -17,15 +17,15 @@ def test_symbol_list():
         has_header=True,
         symbol_index=0
     )
-    os.system("stockdaq-make-symbol-list -i {}"\
+    os.system("stockdaq-make-symbol-list -i {}"
               " -o {} -O -x".format(input_path, output_path2)
-    )
+              )
     stock_list1 = stockdaq.get_symbol_list(
         path=output_path1,
         omit=[],
-    )
+        )
     stock_list2 = stockdaq.get_symbol_list(
         path=output_path2,
         omit=["^","."]
-    )
+        )
     assert stock_list1 == stock_list2

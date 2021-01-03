@@ -5,6 +5,8 @@ import csv
 
 import numpy as np
 
+from stockdaq.logger import logger
+
 
 def make_symbol_list(
         input_path, output_path, overwrite=True, omit=["^", "."],
@@ -43,13 +45,18 @@ def make_symbol_list(
         raise FileExistsError("File {} already exists".format(output_path))
 
     symbol_list.sort()
-
+    nsymbols = 0
     with open(output_path, "w") as f:
         for symbol in symbol_list:
             if any([char in symbol for char in omit]):
                 pass
             else:
                 f.write("{}\n".format(symbol))
+                nsymbols += 1
+
+    logger.info("{} symbols have been written to {}"
+                "".format(nsymbols, output_path)
+                )
 
 
 def get_symbol_list(path, omit=["^", "."]):
@@ -82,4 +89,7 @@ def get_symbol_list(path, omit=["^", "."]):
                     remove_list.append(symbol)
     for remove_symbol in remove_list:
         symbol_list.remove(remove_symbol)
+    logger.info("{} symbols have been read from {}"
+                "".format(len(symbol_list), path)
+                )
     return symbol_list

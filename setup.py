@@ -23,8 +23,6 @@ long_description = (here / 'README.rst').read_text(encoding='utf-8')
 # Arguments marked as "Required" below must be included for upload to PyPI.
 # Fields marked as "Optional" may be commented out.
 
-
-
 setup(
     name='stockdaq',  # Required
     version=VERSION,  # Required
@@ -39,7 +37,7 @@ setup(
     python_requires='>=3.5, <4',
     install_requires=[
         'numpy',
-    ], # Dependencies here, Optional
+    ],  # Dependencies here, Optional
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
     # syntax, for example:
@@ -57,10 +55,11 @@ setup(
     # },
     entry_points={
         'console_scripts': [
-            'print-hello-worlds=stockdaq.clitools.print_hello_worlds:main',
-            'stockdaq-make-symbol-list=stockdaq.clitools.make_symbol_list:main',
-        ],
-    }
+                'print-hello-worlds=stockdaq.clitools.print_hello_worlds:main',
+                'stockdaq-make-symbol-list='
+                'stockdaq.clitools.make_symbol_list:main',
+                ],
+        }
     # List additional URLs that are relevant to your project as a dict.
     #
     # This field corresponds to the "Project-URL" metadata fields:

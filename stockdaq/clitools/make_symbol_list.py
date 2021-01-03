@@ -25,7 +25,7 @@ def parser():
         action="store_true"
     )
     parser.add_argument(
-        "-s", "--symbol-index", type=int, help="The column index of the stock"\
+        "-s", "--symbol-index", type=int, help="The column index of the stock"
         " symbols", default=0
     )
     return parser
