@@ -24,29 +24,32 @@ This is a python library for acquisition of stock market data.
 
 
 .. |logo| image:: docs/source/_static/logo.svg
-   :alt: Logo
-   :target: https://github.com/terrencetec/stockdaq
+    :alt: Logo
+    :target: https://github.com/terrencetec/stockdaq
 
 .. |website| image:: https://img.shields.io/badge/website-stockdaq-blue.svg
-   :alt: Website
-   :target: https://github.com/terrencetec/stockdaq
+    :alt: Website
+    :target: https://github.com/terrencetec/stockdaq
 
 .. |release| image:: https://img.shields.io/github/v/release/terrencetec/stockdaq?include_prereleases
-  :alt: Release
-  :target: https://github.com/terrencetec/stockdaq/releases
+   :alt: Release
+   :target: https://github.com/terrencetec/stockdaq/releases
 
 .. |rtd| image:: https://readthedocs.org/projects/stockdaq/badge/?version=latest
-  :alt: Read the Docs
-  :target: https://stockdaq.readthedocs.io/
+   :alt: Read the Docs
+   :target: https://stockdaq.readthedocs.io/
 
 .. |license| image:: https://img.shields.io/github/license/terrencetec/stockdaq
-   :alt: License
-   :target: https://github.com/terrencetec/stockdaq/blob/master/LICENSE
+    :alt: License
+    :target: https://github.com/terrencetec/stockdaq/blob/master/LICENSE
 
 .. |travis-ci| image:: https://travis-ci.com/terrencetec/stockdaq.svg?branch=master
-   :alt: travis-ci
-   :target: https://travis-ci.com/terrencetec/stockdaq
+    :alt: travis-ci
+    :target: https://travis-ci.com/terrencetec/stockdaq
 
+.. |codecov| image:: https://codecov.io/gh/terrencetec/stockdaq/branch/master/graph/badge.svg?token=1qxBpV9PQZ
+    :alt: codecov
+    :target: https://codecov.io/gh/terrencetec/stockdaq
 
 .. toctree::
    :maxdepth: 2

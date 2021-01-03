@@ -152,6 +152,6 @@ Open index.html with a browser (if this was set as the first page).
     :alt: travis-ci
     :target: https://travis-ci.com/terrencetec/stockdaq
 
-.. |codecov| image:: https://codecov.io/gh/terrencetec/stockdaq/branch/master/graph/badge.svg?token=NMEBAYFE2N
+.. |codecov| image:: https://codecov.io/gh/terrencetec/stockdaq/branch/master/graph/badge.svg?token=1qxBpV9PQZ
     :alt: codecov
     :target: https://codecov.io/gh/terrencetec/stockdaq
