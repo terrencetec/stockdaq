@@ -31,7 +31,7 @@ setup(
     description='Stock market data acquisition system',  # Optional
     long_description=long_description,  # Optional
     long_description_content_type='text/x-rst',  # Optional (see note above)
-    url='https://github.com/terrencetec/mypythonlibrary',  # Optional
+    url='https://github.com/terrencetec/stockdaq',  # Optional
     author='TSANG Terrence Tak Lun',  # Optional
     author_email='terrencetec@gmail.com',  # Optional
     keywords='sample, setuptools, development',  # Optional
@@ -57,7 +57,8 @@ setup(
     # },
     entry_points={
         'console_scripts': [
-            'print-hello-worlds=stockdaq.clitools.print_hello_worlds:main'
+            'print-hello-worlds=stockdaq.clitools.print_hello_worlds:main',
+            'stockdaq-make-symbol-list=stockdaq.clitools.make_symbol_list:main',
         ],
     }
     # List additional URLs that are relevant to your project as a dict.

@@ -8,3 +8,11 @@ hello world
    :members:
    :undoc-members:
    :show-inheritance:
+
+Symbol
+------
+
+.. automodule:: stockdaq.symbol
+   :members:
+   :undoc-members:
+   :show-inheritance:
