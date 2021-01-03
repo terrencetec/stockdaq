@@ -32,7 +32,7 @@ def parser():
 
 
 def main(args=None):
-    import stockdaq.utils
+    import stockdaq
 
     options = parser().parse_args(args)
     input_path = options.input

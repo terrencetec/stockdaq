@@ -1,5 +1,7 @@
 """
 """
+import os
+
 import stockdaq
 
 
@@ -15,13 +17,8 @@ def test_symbol_list():
         has_header=True,
         symbol_index=0
     )
-    stockdaq.make_symbol_list(
-        input_path=input_path,
-        output_path=output_path2,
-        overwrite=True,
-        omit=[],
-        has_header=True,
-        symbol_index=0
+    os.system("stockdaq-make-symbol-list -i {}"\
+              " -o {} -O -x".format(input_path, output_path2)
     )
     stock_list1 = stockdaq.get_symbol_list(
         path=output_path1,
