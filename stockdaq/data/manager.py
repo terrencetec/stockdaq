@@ -69,3 +69,4 @@ def extended_trading_splitter(dataframe, begin="9:30", end="15:59"):
     dataframe: pandas.core.frame.DataFrame
 
     """
+    pass

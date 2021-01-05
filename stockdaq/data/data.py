@@ -128,10 +128,10 @@ class Data:
         elif os.path.exists(path) and conflict=="overwrite":
             logger.info("{} exists, overwriting.".format(path))
         elif os.path.exists(path) and conflict=="merge":
-            logger.info("{} exists, merging. How:{}".format(path, mergehow))
+            logger.info("{} exists, merging. How: {}".format(path, mergehow))
             self.merge(path=path, mergehow=mergehow)
         elif os.path.exists(path):
-            raise ValueError("conflict:{} not available.".format(conflict))
+            raise ValueError("conflict: {} not available.".format(conflict))
 
         if format == "hdf5":
             self.dataframe.to_hdf(
@@ -140,7 +140,7 @@ class Data:
             self.dataframe.to_csv(path_or_buf=path, header=header, **kwargs)
         else:
             raise ValueError("{} format not available".format(format))
-        logger.info("Data written to path:{}".format(path))
+        logger.info("Data written to path: {}".format(path))
 
     def load(self, path, format="hdf5"):
         """Load a single stockdaq data file.

@@ -17,7 +17,9 @@ class AlphaVantageDownloader(stockdaq.data.downloader.Downloader):
         """
         """
         super().__init__(
-            api="Alpha Vantage", apikey=apikey, output_format=output_format)
+            api="Alpha Vantage")
+        self.apikey = apikey
+        self.output_format = output_format
         self.ts = alpha_vantage.timeseries.TimeSeries(
             key=self.apikey, output_format=self.output_format)
 
@@ -47,39 +49,6 @@ class AlphaVantageDownloader(stockdaq.data.downloader.Downloader):
             symbol=symbol, interval=interval, outputsize=outputsize)
         self.dataframe = self.formatter(datadump=self.rawdata)
         return self.dataframe
-
-    def export(self, criterion="date", prefix="", suffix="",
-            extension=".h5", conflict="merge"):
-        """Export self.dataframe to hdf5 files, names derive from criterion.
-
-        Parameters
-        ----------
-        criterion: str, optional
-            Data in same file has same "date", "month", or "year".
-            Defaults to date.
-        prefix: str, optional
-            Prefix to the filename.
-        suffix: str, optional
-            suffix to the filename, before the extension.
-        extension: str, optional
-            Extension of the files.
-            Defaults to ".h5".
-        conflict: str, optional
-            How to resolve conflicts.
-            options are ["merge", "overwrite", "ignore"].
-            "merge": append non-duplicating data to the existing datafile.
-            "overwrite": replace the existing file.
-            "ignore": don't do anything.
-        """
-        if criterion == "date":
-            data_dict = stockdaq.data.manager.segmenter(
-                dataframe=self.dataframe,
-                criterion=criterion,
-                )
-        for key in data_dict.keys():
-            data = data_dict[key]
-            filename = prefix+key+suffix+extension
-            data.save(path=filename, format="hdf5", conflict=conflict)
 
     def formatter(self, datadump):
         """Convert Alpha Vantage dataframe to standard stockdaq format
