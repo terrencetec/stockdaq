@@ -23,7 +23,7 @@ class Downloader:
         Parameters
         ----------
         criterion: str, optional
-            Data in same file has same "date", "month", or "year".
+            Data in same file has same "date" or "year".
             Defaults to date.
         prefix: str, optional
             Prefix to the filename.
@@ -43,11 +43,10 @@ class Downloader:
             "keep old": If there are duplicated indexes, keep old data.
             "update": If there are duplicated indexes, keep new data.
         """
-        if criterion == "date":
-            data_dict = stockdaq.data.manager.segmenter(
-                dataframe=self.dataframe,
-                criterion=criterion,
-                )
+        data_dict = stockdaq.data.manager.segmenter(
+            dataframe=self.dataframe,
+            criterion=criterion,
+            )
         for key in data_dict.keys():
             data = data_dict[key]
             filename = prefix+key+suffix+extension

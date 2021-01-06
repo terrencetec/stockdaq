@@ -58,6 +58,8 @@ setup(
                 'print-hello-worlds=stockdaq.clitools.print_hello_worlds:main',
                 'stockdaq-make-symbol-list='
                 'stockdaq.clitools.make_symbol_list:main',
+                'stockdaq-update-database='
+                'stockdaq.clitools.update_database:main',
                 ],
         }
     # List additional URLs that are relevant to your project as a dict.

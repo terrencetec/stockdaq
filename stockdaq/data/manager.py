@@ -13,7 +13,7 @@ def segmenter(dataframe, criterion="date"):
     dataframe: pandas.core.frame.DataFrame
         Dataframe
     criterion: str
-        "date", "month", or "year"
+        "date" or "year"
 
     Returns
     -------
@@ -25,38 +25,36 @@ def segmenter(dataframe, criterion="date"):
         # of the datetime column.
     slice_indexes = []
     data_dict = {}
-    if criterion == "date":
-        for i in range(len(dataframe.index)):
+    for i in range(len(dataframe.index)):
+        if criterion == "date":
             date = str(dataframe.index[i].date())
-            if date not in dates:
-                dates.append(date)
-                slice_indexes.append(i)
-        slice_indexes.append(len(dataframe.index))
+        elif criterion == "year":
+            date = str(dataframe.index[i].year)
+        else:
+            raise ValueError("{} criterion not avaiable.".format(criterion))
+        if date not in dates:
+            dates.append(date)
+            slice_indexes.append(i)
+    slice_indexes.append(len(dataframe.index))
 
-        for i in range(len(dates)):
-            begin = slice_indexes[i]
-            end = slice_indexes[i+1]
-            datetime_column = dataframe.index[begin:end]
-            open_ = dataframe.open.values[begin:end]
-            high = dataframe.high.values[begin:end]
-            low = dataframe.low.values[begin:end]
-            close = dataframe.close.values[begin:end]
-            volume = dataframe.volume.values[begin:end]
-            data = stockdaq.data.data.Data(
-                datetime_column=datetime_column,
-                open_=open_,
-                high=high,
-                low=low,
-                close=close,
-                volume=volume,
-            )
-            data_dict[dates[i]] = data
-    elif criterion == "month":
-        raise ValueError("Month criterion not avaiable yet.")
-    elif criterion == "year":
-        raise ValueError("Year criterion not avaiable yet.")
-    else:
-        raise ValueError("Criterion not avaiable.")
+    for i in range(len(dates)):
+        begin = slice_indexes[i]
+        end = slice_indexes[i+1]
+        datetime_column = dataframe.index[begin:end]
+        open_ = dataframe.open.values[begin:end]
+        high = dataframe.high.values[begin:end]
+        low = dataframe.low.values[begin:end]
+        close = dataframe.close.values[begin:end]
+        volume = dataframe.volume.values[begin:end]
+        data = stockdaq.data.data.Data(
+            datetime_column=datetime_column,
+            open_=open_,
+            high=high,
+            low=low,
+            close=close,
+            volume=volume,
+        )
+        data_dict[dates[i]] = data
 
     return data_dict
 
