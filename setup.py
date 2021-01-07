@@ -55,7 +55,6 @@ setup(
     # },
     entry_points={
         'console_scripts': [
-                'print-hello-worlds=stockdaq.clitools.print_hello_worlds:main',
                 'stockdaq-make-symbol-list='
                 'stockdaq.clitools.make_symbol_list:main',
                 'stockdaq-update-database='
