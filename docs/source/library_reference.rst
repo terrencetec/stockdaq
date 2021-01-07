@@ -1,6 +1,17 @@
 Library Reference
 =================
 
+Downloaders
+-----------
+.. autosummary::
+   :recursive:
+   :toctree: generated/
+   :caption: Main references
+
+   stockdaq.data.downloader.Downloader
+   stockdaq.data.alpha_vantage_downloader.AlphaVantageDownloader
+
+
 Acquisiter
 ----------
 
@@ -21,6 +32,14 @@ Symbol
 ------
 
 .. automodule:: stockdaq.symbol
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Utilities
+---------
+
+.. automodule:: stockdaq.utils
    :members:
    :undoc-members:
    :show-inheritance:
