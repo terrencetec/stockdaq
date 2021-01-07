@@ -18,7 +18,7 @@ def segmenter(dataframe, criterion="date"):
     Returns
     -------
     data_dict: dict of stockdaq.data.data.Data
-        {"date", "month", or "year": stockdaq.data.data.Data} pair
+        {"date" or "year": stockdaq.data.data.Data} pair
         For example {"2020-01-01": ..., "2020-01-02": ..., ...}.
     """
     dates = []  # Not technically date, just the string version\
