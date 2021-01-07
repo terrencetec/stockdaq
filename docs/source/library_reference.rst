@@ -1,6 +1,16 @@
 Library Reference
 =================
 
+Acquisiter
+----------
+.. autosummary::
+   :recursive:
+   :toctree: generated/
+   :caption: Main references
+
+   stockdaq.acquisiter.acquisiter.Acquisiter
+
+
 Downloaders
 -----------
 .. autosummary::
@@ -9,37 +19,35 @@ Downloaders
    :caption: Main references
 
    stockdaq.data.downloader.Downloader
-   stockdaq.data.alpha_vantage_downloader
+   stockdaq.data.alpha_vantage_downloader.AlphaVantageDownloader
 
-
-Acquisiter
-----------
-
-.. automodule:: stockdaq.acquisiter.acquisiter
-   :members:
-   :undoc-members:
-   :show-inheritance:
 
 Data
 ----
+.. autosummary::
+   :recursive:
+   :toctree: generated/
+   :caption: Main references
 
-.. automodule:: stockdaq.data
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   stockdaq.data.data.Data
+   stockdaq.data.manager
+
 
 Symbol
 ------
+.. autosummary::
+   :recursive:
+   :toctree: generated/
+   :caption: Main references
 
-.. automodule:: stockdaq.symbol
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   stockdaq.symbol
+
 
 Utilities
 ---------
+.. autosummary::
+   :recursive:
+   :toctree: generated/
+   :caption: Main references
 
-.. automodule:: stockdaq.utils.config
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   stockdaq.utils.config
