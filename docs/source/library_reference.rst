@@ -1,10 +1,18 @@
 Library Reference
 =================
 
-hello world
------------
+Acquisiter
+----------
 
-.. automodule:: stockdaq.helloworld.helloworld
+.. automodule:: stockdaq.acquisiter.acquisiter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Data
+----
+
+.. automodule:: stockdaq.data
    :members:
    :undoc-members:
    :show-inheritance:
