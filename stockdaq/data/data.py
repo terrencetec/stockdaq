@@ -34,7 +34,7 @@ class Data:
     ----------
     datetime_column: pandas.core.indexes.datetimes.DatetimeIndex
         Date and time
-    open_: array
+    open: array
         open price data
     high: array
         high price data

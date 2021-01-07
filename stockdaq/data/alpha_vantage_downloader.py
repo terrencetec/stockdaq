@@ -11,10 +11,38 @@ import stockdaq.data.manager
 
 
 class AlphaVantageDownloader(stockdaq.data.downloader.Downloader):
-    """
+    """Downloader using Alpha Vantage API
+
+    Parameters
+    ----------
+    apikey: str
+        The API key for Alpha Vantage.
+    output_format: str, optional
+        The output_format of the getters.
+        Only "pandas" avilable now.
+
+    Attributes
+    ----------
+    apikey: str
+        The API key for Alpha Vantage.
+    output_format: str, optional
+        The output_format of the getters.
+        Only "pandas" avilable now.
+    ts: alpha_vantage.timeseries.TimeSeries
+        The Alpha Vantage timeseries instance for getting data.
+    dataframe: pandas.core.frame.DataFrame
+        The obtained data. Update using getters.
     """
     def __init__(self, apikey, output_format="pandas"):
-        """
+        """Constructor
+
+        Parameters
+        ----------
+        apikey: str
+            The API key for Alpha Vantage.
+        output_format: str, optional
+            The output_format of the getters.
+            Only "pandas" avilable now.
         """
         super().__init__(
             api="Alpha Vantage")
