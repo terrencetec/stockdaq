@@ -9,7 +9,7 @@ Downloaders
    :caption: Main references
 
    stockdaq.data.downloader.Downloader
-   stockdaq.data.alpha_vantage_downloader.AlphaVantageDownloader
+   stockdaq.data.alpha_vantage_downloader
 
 
 Acquisiter
@@ -39,7 +39,7 @@ Symbol
 Utilities
 ---------
 
-.. automodule:: stockdaq.utils
+.. automodule:: stockdaq.utils.config
    :members:
    :undoc-members:
    :show-inheritance:
