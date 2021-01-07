@@ -20,5 +20,9 @@ def test_acquisiter():
         database_update_interval=86400
         )
     a.update_database()
-    assert all([os.path.exists("tests/data/{}".format(symbol))
+    flag = all([os.path.exists("tests/data/{}".format(symbol))
                for symbol in stocklist])
+    for symbol in stocklist:
+        if os.path.exists(root_dir+symbol):
+            shutil.rmtree(root_dir+symbol)
+    assert flag
