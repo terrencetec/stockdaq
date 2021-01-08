@@ -20,6 +20,7 @@ Downloaders
 
    stockdaq.data.downloader.Downloader
    stockdaq.data.alpha_vantage_downloader.AlphaVantageDownloader
+   stockdaq.data.yfinance_downloader.yfinanceDownloader
 
 
 Data
