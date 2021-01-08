@@ -1,4 +1,5 @@
 numpy
 pandas
-alpha_vantage
 tables
+alpha_vantage
+yfinance
